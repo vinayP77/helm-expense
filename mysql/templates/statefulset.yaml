@@ -33,7 +33,7 @@ spec:
       namespace: expense
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: "ebs-sc"
+      storageClassName: "expense-ebs"
       resources:
         requests:
           storage: {{ .Values.statefulset.storage }}
